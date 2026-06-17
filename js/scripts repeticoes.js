@@ -76,3 +76,7 @@ for (let elemento of presentes){
 
 //FOREACH
 const divForeach = document.querySelector('#div-foreach')
+
+presentes.forEach((elemento, posicao)=>{
+  divForeach.innerHTML += `${posicao} - ${elemento} <br>`
+})
