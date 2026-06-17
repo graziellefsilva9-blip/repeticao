@@ -70,7 +70,9 @@ for(let posicao in presentes){
 //FOR OF
 const divForOf = document.querySelector('#div-forof')
 
-for (let elementos of presentes){
+for (let elemento of presentes){
   divForOf.innerHTML += `${elemento} <br>`
 }
 
+//FOREACH
+const divForeach = document.querySelector('#div-foreach')
