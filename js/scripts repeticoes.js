@@ -1,12 +1,12 @@
 //Estrutura de Repetição for
-const divFor = document.querySelector('#div for')
+// const divFor = document.querySelector('#div for')
 
-for(i - 0;i <10; i++){
-    console.log(i, 'Amor')
-    divFor.innerHTML += `${i} - Amor <br> `
+// for(i - 0;i < 10; i++ ){
+//     console.log(i, 'amor')
+//     divFor.innerHTML += `${i} - Amor <br> `
 
 
-}
+//   }
 
 //CONTADOR/ACUMULADOR
 const inputNum = document.querySelector('#num')
@@ -16,25 +16,37 @@ const divContAcum = document.querySelector('#div-cont-acum')
 let cont = 0
 let acum = 0.0
 btnNum.addEventListener('click', (evt)=>{
-  let numDigitado = Number(inputNum.value)
+  evt.preventDefault()
+  let numdigitado = Number(inputNum.value)
 
   cont++
-  acum += numDigitado
+  acum += numdigitado
 
   divContAcum.innerHTML = `TOTAL DE NÚMERO DIGITADO É: ${cont} <br>
   A SOMA DOS NUMEROS É: ${acum}`
 
   inputNum.value = ''
 
+})
 
 
+//CONTROLADO FOR
+const inputfrase = document.querySelector('#frase')
+const inputNumRepeticao = document.querySelector('#num-repeticao')
+const btnfrase = document.querySelector('#btn-frase')
+const divfrase = document.querySelector('#div-frase')
+
+btnfrase.addEventListener('click', (evt) => {
+  
+
+  let numRepeti = Number(inputNumRepeticao.value)
+  let frase = inputfrase.value
+
+  for (i = 0; i < numRepeti; i++){
+    divfrase.innerHTML += `${i + 1} - ${frase} <br>`
+  }
+
+})
 
 
-
-
-}
-
-
-
-
-)
+//FOR IN
