@@ -22,7 +22,9 @@ btnNum.addEventListener('click', (evt)=>{
   acum += numDigitado
 
   divContAcum.innerHTML = `TOTAL DE NÚMERO DIGITADO É: ${cont} <br>
-  A SOMA DOS NUMEROS É `
+  A SOMA DOS NUMEROS É: ${acum}`
+
+  inputNum.value = ''
 
 
 
