@@ -60,3 +60,17 @@ for(i = 0;i < 5;i++ ){
 }
 
 //FOR IN
+const divForIn = document.querySelector('#div-forin')
+
+for(let posicao in presentes){
+  divForIn.innerHTML += `${presentes[posicao]} <br>`
+
+}
+
+//FOR OF
+const divForOf = document.querySelector('#div-forof')
+
+for (let elementos of presentes){
+  divForOf.innerHTML += `${elemento} <br>`
+}
+
