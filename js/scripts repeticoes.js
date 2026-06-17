@@ -48,5 +48,15 @@ btnfrase.addEventListener('click', (evt) => {
 
 })
 
+//COLEÇÃO DE DADOS - ARRAY
+const presentes = ['Bicicleta', 'Celular', 'Camisa do Mengão', 'Doleira', 'Tênis Adidas'  ]
+
+const divArray = document.querySelector('#div-array')
+
+//divArray.innerHTML = presentes[6]
+
+for(i = 0;i < 5;i++ ){
+  divArray.innerHTML += `${presentes[i]} <br>`
+}
 
 //FOR IN
