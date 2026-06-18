@@ -99,6 +99,25 @@ const pessoas = [
 pessoas.push({nome: 'Magnólia',  idade: 32, renda: 3500})
 pessoas.unshift({nome: 'Joerdisson', idade: 36, renda: 100000})
 
+//SPLICE ADICIONA EM UMA POSIÇÃO SEM EXCLUIR UM ELEMENTO
+//pessoas.splice(3,0,{nome: 'Extraterrestre', idade: 250, renda: 0.50})
+
+//SPLICE ADICIONA  EM UMA POSIÇÃO E NESSE EXEMPLO EXCLUIR MAIS DOIS ELEMENTOS A PARTIR DA POSIÇÃO(INDICE) INFORMADO
+//pessoas.splice(3,2,{nome: 'Extraterrestre', idade: 250, renda: 0.50})
+
+//SPLICE EXCLUI UMA POSICAO E NESSE EXEMPLO EXCLUI APENAS O ELEMENTO DA POSICAO(INDICE) IMFORMADO
+//pessoas.slice(1,0)
+
+//SPLICE EXCLUI DOIS ELEMENTOS A PARTIR DA POSIÇÃO(INDICE)INFORMADO
+//pessoas.slice(2,2)
+
+//EXCLUI O ULTIMO ELEMENTO DO ARRAY
+//pessoas.pop()
+
+//EXIBIR A QUANTIDADE DE ELEMENTOS EM UM ARRAY
+console.log('TOTAL DE ELEMENTOS NO ARRAY')
+
+
 //LISTANDO  OBJETO LITERAL PELO FOR
 const divListaObjFor = document.querySelector('#div-listaobj-for')
 
