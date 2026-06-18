@@ -51,6 +51,10 @@ btnfrase.addEventListener('click', (evt) => {
 //COLEÇÃO DE DADOS - ARRAY
 const presentes = ['Bicicleta', 'Celular', 'Camisa do Mengão', 'Doleira', 'Tênis Adidas'  ]
 
+//console.log(presentes[2])
+
+//presentes[3] = 'Relógio'
+
 const divArray = document.querySelector('#div-array')
 
 //divArray.innerHTML = presentes[6]
@@ -98,3 +102,34 @@ for(i = 0; i < pessoas.length;i++){
   R$ ${pessoas[i].renda.toFixed(2).replace('.',',')} <br>`
 
 }
+ 
+//LISTANDO OBJETOS LITERAL PELO  FOR/IN
+const divListaObjForIn= document.querySelector('#div-listaobj-forin')
+
+for(let indece in pessoas){
+  divListaObjForIn.innerHTML += `${indece} - ${pessoas[indece].nome}, ${pessoas[indece].idade},  ${pessoas[indece].renda.toFixed(2).replace('.',',')} <br>`
+
+}
+
+//LISTANDO OBJETOS LITERAL PELO FOR/OF
+const divListaForOf= document.querySelector('#div-listaobj-forof')
+
+let contForOf = 0
+for(let elem of pessoas) {
+  contForOf++
+
+  divListaForOf.innerHTML += `${contForOf} - ${elem.nome}, ${elem.idade},  ${elem.renda.toFixed(2).replace('.',',')} <br>`
+
+}
+
+//LISTANDO OBJETOS LITERAL PELO FOREACH
+const divListaForeach= document.querySelector('#div-lista-foreach')
+
+pessoas.forEach((elem, i)=>{
+  divListaForeach.innerHTML += `${i + 1} - ${elem.nome}, ${elem.idade},  ${elem.renda.toFixed(2).replace('.',',')} <br>`
+
+}
+
+)
+
+
