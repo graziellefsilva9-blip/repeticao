@@ -67,11 +67,11 @@ const intervalo = setInterval(()=>{
 }, 3000)
 */
 
-const divNumSorteio = document.querySelector('#div-num-sorteio')
+ const divNumSorteio = document.querySelector('#div-num-sorteio')
 
 let contVolta = 0, numSorteado = 0, contPar = 0, contImpar = 0
 
-const sorteio = setInterval(()=>{
+/*Const sorteio = setInterval(()=>{
     contVolta ++
 
     numSorteado = parseInt(Math.random() * 60)
@@ -98,4 +98,9 @@ const sorteio = setInterval(()=>{
         numSorteado = 0
     }
 }, 2000)
+*/
+
+//CHAMADA A FUNÇÃO DE OUTRA ARQUIVO 
+console.log('CÁLCULO DA FUNÇÃO calculoPercentual DO ARQUIVO scripts_calculos.js --->',calculoPercentual(750))
+
 
